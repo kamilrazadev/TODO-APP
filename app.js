@@ -27,8 +27,9 @@ function deleteItem(element) {
   }
 
 function editItem(element){
-    const toEditItem = document.getElementById('task-text')
-    let newText = prompt("Write Task to Change:")
+    const editItemParent = element.parentNode.parentNode
+    let newText = prompt("Write to Update Element: ")
+    let toEditItem = editItemParent.querySelector('.task-text')
     toEditItem.innerText = newText
-    // console.log(newText)
+    
 }
