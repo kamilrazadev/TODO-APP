@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    height:fit-content;
+    margin-top: 50px;
+    /* border: 2px solid red; */
+}
+
+.input-div{
+
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid red; */
+    margin: 50px 0px;
+
+}
+
+
+.input-field{
+    width: 70%;
+    height: 3.3rem;
+    border-radius: 30px;
+    box-shadow: inset 1px 1px 2px 1px #ccc;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 20px;
+    padding-right: 155px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+}
+
+.add-button{
+    padding: 0px 40px;
+    height: 3.3rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color:#2471ff;
+    color: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    margin-left : -150px;
+
+}
+
+.add-button:hover{
+    cursor: pointer;
+    transition: 150ms;
+    transform: scale(1.05);
+}
+
+.plus-icon{
+    font-size: 15px;
+    color: #2471ff;
+    background-color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.task-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-item{
+
+    position: relative;
+    width: 70%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow:  1px 1px 2px 1px #ccc;
+}
+
+.task-item-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;;
+}
+
+.edit-icon{
+    margin-right: 10px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 30px;
+    background-color: #2471ff;
+}
+
+.trash-icon{
+    padding-top: 8px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 4px;
+    color: white;
+    font-size: 30px;
+    background-color: #2471ff;
+}
+
+.task-text{
+    margin-right: 10px; /* Add some spacing between text and icons */
+    display: inline;
+    padding-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@media  screen and (max-device-width: 600px) {
+    .input-field{
+        width: 90%;
+    }
+    .task-item{
+        width: 80%;
+    }
+}
+
