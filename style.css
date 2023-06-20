@@ -122,6 +122,7 @@
     background-color: #2471ff;
 }
 
+
 .trash-icon{
     padding-top: 8px;
     padding-bottom: 12px;
@@ -132,6 +133,12 @@
     font-size: 30px;
     background-color: #2471ff;
 }
+
+.edit-icon:hover,
+.trash-icon:hover{
+    cursor: pointer;
+}
+
 
 .task-text{
     margin-right: 10px; /* Add some spacing between text and icons */
