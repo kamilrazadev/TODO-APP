@@ -135,7 +135,8 @@
 }
 
 .edit-icon:hover,
-.trash-icon:hover{
+.trash-icon:hover,
+.done-btn{
     cursor: pointer;
 }
 
@@ -143,10 +144,24 @@
 .task-text{
     margin-right: 10px; /* Add some spacing between text and icons */
     display: inline;
-    padding-left: 5px;
+    padding: 5px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
+    width: 78%;
+    min-width: 78%;
+}
+
+.done-btn {
+    background-color: #2471ff;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    padding: 4px 6px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 8px;
 }
 
 @media  screen and (max-device-width: 600px) {
@@ -154,7 +169,24 @@
         width: 90%;
     }
     .task-item{
-        width: 80%;
+        width: 100%;
     }
 }
 
+@media (max-width: 930px) {
+    .task-text {
+        width: 75%;
+        min-width: 60%;
+    }
+}
+
+@media (max-width: 375px) {
+    .trash-icon {
+        font-size: 15px;
+        padding: 7px 8px 7px 8px;
+    }
+    .edit-icon {
+        font-size: 15px;
+        padding: 6px 6px 8px 8px;
+    }
+}
